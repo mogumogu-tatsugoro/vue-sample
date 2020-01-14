@@ -18,3 +18,14 @@ const app3 = new Vue({
     seen: true
   }
 });
+
+const app4 = new Vue({
+  el: '#app4',
+  data: {
+    todos: [
+      { text: 'aaa' },
+      { text: 'bbb' },
+      { text: 'ccc' },
+    ]
+  }
+});
