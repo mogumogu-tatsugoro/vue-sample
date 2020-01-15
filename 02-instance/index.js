@@ -1,4 +1,4 @@
-let data = { test: 'test' };
+let data = {test: 'test'};
 
 const vm = new Vue({
   el: '#app',
@@ -31,3 +31,14 @@ const app2 =  new Vue({
     }
   }
 });
+
+data3 = {a: 1, b: 2};
+
+const app3 = new Vue({
+  el: '#app3',
+  data: data3
+});
+
+console.log(app3.$el === document.getElementById('app3'));
+console.log(app3.$data === data3);
+// true
